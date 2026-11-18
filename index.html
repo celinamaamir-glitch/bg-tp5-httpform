@@ -15,10 +15,8 @@
     <main class="container">
 
         <!-- En-tête -->
-        <header class="header">
-            <div class="logo">
-                🎬 CinéPass
-            </div>
+        <header>
+           <h1>🎬 CinéPass</h1>
 
             <p>Inscription au Club de Cinéma - Saison 2025</p>
         </header>
@@ -26,7 +24,7 @@
         <form action="#" method="post" enctype="multipart/form-data">
 
             <!-- Message de bienvenue -->
-            <div class="welcome">
+           <div class="info">
                 💡 Rejoignez notre club et profitez de tarifs réduits,
                 d'avant-premières exclusives et de rencontres avec des réalisateurs !
             </div>
@@ -89,29 +87,27 @@
 
                 <h2>🎟️ Formule d'abonnement</h2>
 
-                <label class="section-label">Choisissez votre formule :</label>
-
-                <div class="choice-box">
-
-                    <label class="choice">
+                <fieldset class="radio-group">
+            <legend>Choisissez votre formule :</legend>
+                    <label>
                         <input type="radio" name="formule"
                             value="basique" checked>
                         🥉 Basique - 4 séances/mois (2000 DA/mois)
                     </label>
 
-                    <label class="choice">
+                    <label>
                         <input type="radio" name="formule"
                             value="premium">
                         🥈 Premium - 10 séances/mois (4500 DA/mois)
                     </label>
 
-                    <label class="choice">
+                    <label>
                         <input type="radio" name="formule"
                             value="illimite">
                         🥇 Illimité - Séances illimitées (7000 DA/mois)
                     </label>
 
-                </div>
+                </fieldset>
 
                 <div class="form-grid">
 
@@ -151,46 +147,45 @@
 
                 <h2>🎥 Vos préférences cinématographiques</h2>
 
-                <label class="section-label">Genres de films préférés :</label>
+                <fieldset class="checkbox-group">
+            <legend>Genres de films préférés :</legend>
 
-                <div class="choice-box">
-
-                    <label class="choice">
+                    <label >
                         <input type="checkbox" name="genres[]" value="action">
                         💥 Action / Aventure
                     </label>
 
-                    <label class="choice">
+                    <label>
                         <input type="checkbox" name="genres[]" value="comedie">
                         😁 Comédie
                     </label>
 
-                    <label class="choice">
+                    <label >
                         <input type="checkbox" name="genres[]" value="drame">
                         🎭 Drame
                     </label>
 
-                    <label class="choice">
+                    <label >
                         <input type="checkbox" name="genres[]" value="horreur">
                         👻 Horreur / Thriller
                     </label>
 
-                    <label class="choice">
+                    <label>
                         <input type="checkbox" name="genres[]" value="science-fiction">
                         🚀 Science-fiction
                     </label>
 
-                    <label class="choice">
+                    <label >
                         <input type="checkbox" name="genres[]" value="romance">
                         ❤️ Romance
                     </label>
 
-                    <label class="choice">
+                    <label >
                         <input type="checkbox" name="genres[]" value="documentaire">
                         🎞️ Documentaire
                     </label>
 
-                </div>
+                </fieldset>
 
                 <div class="form-group">
                     <label for="langues">
